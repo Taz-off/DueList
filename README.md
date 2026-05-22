@@ -55,17 +55,7 @@ The goal of DueList is to make school organization easier by keeping homework, n
 
 Le but de DueList est de simplifier l’organisation scolaire en regroupant les devoirs, les notes et les tâches importantes dans une seule application simple.
 
-## Technologies
-
-This project is published with **GitHub Pages**.
-
-Ce projet est publié avec **GitHub Pages**.
-
-## Project status / Statut du projet
-
-DueList is still in development. New features and improvements may be added later.
-
-DueList est encore en développement. De nouvelles fonctionnalités et améliorations pourront être ajoutées plus tard.
+---
 
 ## Author / Auteur
 
