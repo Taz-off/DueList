@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#2563eb">
+    <meta
+      name="description"
+      content="DueList, agenda scolaire local et installable pour suivre les devoirs, évaluations et révisions."
+    >
+    <title>DueList - Agenda scolaire</title>
+    <link rel="icon" href="./logo.png" type="image/png">
+    <link rel="stylesheet" href="./styles.css?v=7">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Navigation principale">
+        <div class="brand-block" aria-label="DueList">
+          <img class="brand-logo" src="./logo.png" alt="" aria-hidden="true">
+          <span>
+            <strong>DueList</strong>
+            <small>Agenda scolaire</small>
+          </span>
+        </div>
+
+        <nav class="nav-list" aria-label="Sections">
+          <button class="nav-item is-active" type="button" data-route="home">
+            <span class="nav-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M4 10.8 12 4l8 6.8v8.7a.5.5 0 0 1-.5.5h-5v-5.7h-5V20h-5a.5.5 0 0 1-.5-.5v-8.7Z"></path>
+              </svg>
+            </span>
+            <span>Accueil</span>
+          </button>
+          <button class="nav-item" type="button" data-route="agenda">
+            <span class="nav-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M7 3.5v3M17 3.5v3M4.5 9h15M6 5h12a2 2 0 0 1 2 2v11.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"></path>
+              </svg>
+            </span>
+            <span>Agenda</span>
+          </button>
+          <button class="nav-item" type="button" data-route="add">
+            <span class="nav-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M12 5v14M5 12h14"></path>
+              </svg>
+            </span>
+            <span>Ajouter</span>
+          </button>
+          <button class="nav-item" type="button" data-route="notes">
+            <span class="nav-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M6 4.5h9.5L18 7v12.5H6V4.5Z"></path>
+                <path d="M15.5 4.5V7H18"></path>
+                <path d="M9 11h6M9 15h4"></path>
+              </svg>
+            </span>
+            <span>Notes rapides</span>
+          </button>
+        </nav>
+
+        <button class="nav-item sidebar-settings" type="button" data-route="settings">
+          <span class="nav-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M12 8.2a3.8 3.8 0 1 0 0 7.6 3.8 3.8 0 0 0 0-7.6Z"></path>
+              <path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.04.04a2 2 0 0 1-2.82 2.82l-.04-.04a1.7 1.7 0 0 0-1.88-.34 1.7 1.7 0 0 0-1.04 1.56V21a2 2 0 0 1-4 0v-.08a1.7 1.7 0 0 0-1.04-1.56 1.7 1.7 0 0 0-1.88.34l-.04.04a2 2 0 0 1-2.82-2.82l.04-.04A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-1.56-1.04H3a2 2 0 0 1 0-4h.04A1.7 1.7 0 0 0 4.6 8.92a1.7 1.7 0 0 0-.34-1.88l-.04-.04a2 2 0 0 1 2.82-2.82l.04.04a1.7 1.7 0 0 0 1.88.34A1.7 1.7 0 0 0 10 3V3a2 2 0 0 1 4 0v.08a1.7 1.7 0 0 0 1.04 1.56 1.7 1.7 0 0 0 1.88-.34l.04-.04a2 2 0 0 1 2.82 2.82l-.04.04a1.7 1.7 0 0 0-.34 1.88A1.7 1.7 0 0 0 21 10h.04a2 2 0 0 1 0 4H21a1.7 1.7 0 0 0-1.56 1.04Z"></path>
+            </svg>
+          </span>
+          <span>Paramètres</span>
+        </button>
+      </aside>
+
+      <main class="main-content" id="app" tabindex="-1"></main>
+
+      <nav class="mobile-nav" aria-label="Navigation mobile">
+        <button class="mobile-nav-item is-active" type="button" data-route="home">
+          <span class="nav-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M4 10.8 12 4l8 6.8v8.7a.5.5 0 0 1-.5.5h-5v-5.7h-5V20h-5a.5.5 0 0 1-.5-.5v-8.7Z"></path>
+            </svg>
+          </span>
+          <span>Accueil</span>
+        </button>
+        <button class="mobile-nav-item" type="button" data-route="agenda">
+          <span class="nav-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M7 3.5v3M17 3.5v3M4.5 9h15M6 5h12a2 2 0 0 1 2 2v11.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"></path>
+            </svg>
+          </span>
+          <span>Agenda</span>
+        </button>
+        <button class="mobile-nav-item" type="button" data-route="add">
+          <span class="nav-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M12 5v14M5 12h14"></path>
+            </svg>
+          </span>
+          <span>Ajouter</span>
+        </button>
+        <button class="mobile-nav-item" type="button" data-route="notes">
+          <span class="nav-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M6 4.5h9.5L18 7v12.5H6V4.5Z"></path>
+              <path d="M15.5 4.5V7H18"></path>
+              <path d="M9 11h6M9 15h4"></path>
+            </svg>
+          </span>
+          <span>Notes</span>
+        </button>
+        <button class="mobile-nav-item" type="button" data-route="settings">
+          <span class="nav-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M12 8.2a3.8 3.8 0 1 0 0 7.6 3.8 3.8 0 0 0 0-7.6Z"></path>
+              <path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.04.04a2 2 0 0 1-2.82 2.82l-.04-.04a1.7 1.7 0 0 0-1.88-.34 1.7 1.7 0 0 0-1.04 1.56V21a2 2 0 0 1-4 0v-.08a1.7 1.7 0 0 0-1.04-1.56 1.7 1.7 0 0 0-1.88.34l-.04.04a2 2 0 0 1-2.82-2.82l.04-.04A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-1.56-1.04H3a2 2 0 0 1 0-4h.04A1.7 1.7 0 0 0 4.6 8.92a1.7 1.7 0 0 0-.34-1.88l-.04-.04a2 2 0 0 1 2.82-2.82l.04.04a1.7 1.7 0 0 0 1.88.34A1.7 1.7 0 0 0 10 3V3a2 2 0 0 1 4 0v.08a1.7 1.7 0 0 0 1.04 1.56 1.7 1.7 0 0 0 1.88-.34l.04-.04a2 2 0 0 1 2.82 2.82l-.04.04a1.7 1.7 0 0 0-.34 1.88A1.7 1.7 0 0 0 21 10h.04a2 2 0 0 1 0 4H21a1.7 1.7 0 0 0-1.56 1.04Z"></path>
+            </svg>
+          </span>
+          <span>Param.</span>
+        </button>
+      </nav>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="./db.js?v=7"></script>
+    <script src="./app.js?v=7"></script>
+  </body>
+</html>
