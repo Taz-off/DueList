@@ -19,7 +19,6 @@ https://taz-off.github.io/DueList/
 - Quick notes system / Système de notes rapides
 - Simple and clean interface / Interface simple et propre
 - Settings page / Page de paramètres
-- Mobile-friendly design / Design adapté au mobile
 - Installable app / Application installable
 
 ## Offline use / Utilisation hors ligne
