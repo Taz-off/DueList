@@ -1,21 +1,93 @@
-# DueList - Version HTML / GitHub
+# DueList
 
-Ce dossier contient uniquement la version web statique de DueList.
+**DueList** is a simple school agenda app made to help students organize their homework, tasks, notes and schedule.
 
-## Pour mettre sur GitHub
+**DueList** est une application d’agenda scolaire simple, faite pour aider les élèves à organiser leurs devoirs, leurs tâches, leurs notes et leur emploi du temps.
 
-1. Cree un nouveau depot GitHub.
-2. Envoie tout le contenu de ce dossier a la racine du depot.
-3. Dans GitHub, va dans `Settings` > `Pages`.
-4. Choisis `Deploy from a branch`.
-5. Selectionne la branche `main` et le dossier `/root`.
-6. GitHub donnera une URL publique pour ouvrir l'application.
+## Website / Site web
 
-## Fichiers importants
+You can use the app here:
+https://taz-off.github.io/DueList/
 
-- `index.html` : page principale.
-- `src/` : code JavaScript et CSS de l'application.
-- `public/` : logos et icones.
-- `manifest.webmanifest` et `sw.js` : installation PWA / mode hors ligne.
+Vous pouvez utiliser l’application ici :
+https://taz-off.github.io/DueList/
 
-Il ne faut pas mettre `node_modules`, `dist-electron` ou les fichiers `.exe` dans ce depot web.
+## Download / Téléchargement
+
+You can also download the Windows `.exe` version of DueList from the **Releases** section of this GitHub repository.
+
+This version lets you install and launch the app directly on Windows, without using a web browser.
+
+Vous pouvez aussi télécharger la version Windows `.exe` de DueList depuis la section **Releases** de ce dépôt GitHub.
+
+Cette version permet d’installer et de lancer l’application directement sur Windows, sans passer par un navigateur web.
+
+## Features / Fonctionnalités
+
+* School agenda / Agenda scolaire
+* Add homework and tasks / Ajouter des devoirs et des tâches
+* Quick notes system / Système de notes rapides
+* Simple and clean interface / Interface simple et propre
+* Settings page / Page de paramètres
+* Installable app / Application installable
+* Windows `.exe` version available / Version Windows `.exe` disponible
+
+## Offline use / Utilisation hors ligne
+
+DueList can be installed directly from the app using the install button.
+
+Once the app is installed, it can work without internet connection, so you can still open and use it even when you are offline.
+
+DueList peut être installée directement depuis l’application avec le bouton d’installation.
+
+Une fois l’application installée, elle peut fonctionner sans connexion internet. Vous pouvez donc l’ouvrir et l’utiliser même sans internet.
+
+## How to install / Comment installer
+
+### Web version / Version web
+
+1. Open the website:
+   https://taz-off.github.io/DueList/
+
+2. Click on the install button in the app.
+
+3. The app will be added to your device like a normal application.
+
+---
+
+1. Ouvrez le site :
+   https://taz-off.github.io/DueList/
+
+2. Cliquez sur le bouton pour installer l’application.
+
+3. L’application sera ajoutée à votre appareil comme une vraie application.
+
+### Windows version / Version Windows
+
+1. Go to the **Releases** section of this GitHub repository.
+
+2. Download the `.exe` file.
+
+3. Open the file and install DueList on your Windows computer.
+
+---
+
+1. Allez dans la section **Releases** de ce dépôt GitHub.
+
+2. Téléchargez le fichier `.exe`.
+
+3. Ouvrez le fichier et installez DueList sur votre ordinateur Windows.
+
+## Goal of the project / Objectif du projet
+
+The goal of DueList is to make school organization easier by keeping homework, notes and important tasks in one simple app.
+
+Le but de DueList est de simplifier l’organisation scolaire en regroupant les devoirs, les notes et les tâches importantes dans une seule application simple.
+
+---
+
+## Author / Auteur
+
+Created by **Taz-Off**.
+
+Créé par **Taz-Off**.
