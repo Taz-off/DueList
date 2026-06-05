@@ -1,17 +1,18 @@
-const CACHE_NAME = "duelist-static-v7";
+const CACHE_NAME = "duelist-static-v15";
 const CORE_ASSETS = [
   "./",
   "./index.html",
-  "./styles.css?v=7",
-  "./app.js?v=7",
-  "./db.js?v=7",
-  "./styles.css",
-  "./app.js",
-  "./db.js",
+  "./src/styles/main.css?v=15",
+  "./src/app/main.js?v=15",
+  "./src/data/database.js?v=15",
+  "./src/styles/main.css",
+  "./src/app/main.js",
+  "./src/data/database.js",
   "./manifest.webmanifest",
-  "./logo.png",
-  "./icons/icon-192.png",
-  "./icons/icon-512.png"
+  "./public/assets/logos/logo-light.png",
+  "./public/assets/logos/logo-dark.png",
+  "./public/icons/icon-192.png",
+  "./public/icons/icon-512.png"
 ];
 
 self.addEventListener("install", (event) => {
